@@ -18,10 +18,10 @@ class App extends Component {
       <div className="App" onSubmit={this.handleSubmit}>
         <Container textAlign="center">
           <Form size="small">
-            <Form.Field>
-              <input placeholder="name of video" width={6} onChange={this.handleChange} />
-            </Form.Field>
-            <Button type="submit">Search videos</Button>
+            <Form.Group>
+              <Form.Input placeholder="name of video" width={6} onChange={this.handleChange} />
+              <Form.Button content="search for video" />
+            </Form.Group>
           </Form>
         </Container>
       </div>
